@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #030637;
+            color: white;
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        label{
+            font-size: 50px;
+            /* font-weight: bolder; */
+            color: rgb(255, 255, 255);
+            
+        }
+        button{
+            width: 150px;
+            height: 50px;
+            font-size: 30px;
+            background-color: rgb(114, 4, 85);
+            color: rgb(240, 237, 207);
+            border-radius: 5px;
+            outline: none;
+            margin-top: 30px;
+        }
+        input{
+            background-color: #3C0753;
+            height: 50px;
+            width: 200px;
+            color: aliceblue;
+            font-size: 30px;
+        }
+        p{
+            display: flex;
+            gap: 60px;
+        }
+    h1{
+        font-size: 80px;
+    }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p>
+                <label for="Weight">Weight in KG:</label> 
+                <input type="text" id="weight">
+            </p>
+            <p>
+                <label for="Height">Height in CM:</label> 
+                <input type="text" id="height">
+            </p>
+            <button>result</button>
+            <div class="results"></div>
+            <div class="message"></div>
+        </form>
+    </div>
+    <script src="p12.js"></script>
+</body>
+</html>
